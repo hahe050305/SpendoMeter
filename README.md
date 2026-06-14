@@ -70,11 +70,6 @@ HDFC Bank: Rs 400.80 debited from a/c **2823 on 25-07-23 to VPA bookmyshow@axb U
 }
 ```
 
-
-
----
-
-
 ---
 
 ## 🛠️ Tech Stack
@@ -89,9 +84,6 @@ HDFC Bank: Rs 400.80 debited from a/c **2823 on 25-07-23 to VPA bookmyshow@axb U
 
 - TF-IDF Vectorization
 - Logistic Regression Classification
-
----
-
 
 ---
 
