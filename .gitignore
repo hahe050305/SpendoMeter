@@ -1,4 +1,3 @@
-# Personal data — NEVER commit these
 *.xml
 spendsense.db
 dataset_extract/sms_raw_all.csv
