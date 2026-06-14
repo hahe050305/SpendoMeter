@@ -1,0 +1,57 @@
+SMS Dataset Cleaning Report
+Generated: 2026-06-12 13:04:40
+============================================================
+Input rows loaded     : 288
+Genuine transactions  : 147
+Rejected (non-txn)    : 141
+
+Rejection reasons:
+  no_strong_keyword              80
+  spam_sender                    36
+  disqualify_keyword             18
+  no_bank_sender_or_ref          5
+  no_valid_amount                1
+  amount_too_small               1
+
+Extraction coverage (out of genuine transactions):
+  amount               147/147 (100.0%)
+  txn_type             147/147 (100.0%)
+  bank                 147/147 (100.0%)
+  account_last4        140/147 (95.2%)
+  upi_ref              124/147 (84.4%)
+  upi_id               22/147 (15.0%)
+  merchant_raw         5/147 (3.4%)
+
+Output files saved:
+  datasets/sms_labelled_clean.csv               ← full labelled dataset (use for classifier training)
+  datasets/sms_transactions_clean.csv  ← transactions only (use for extraction model)
+
+Sample genuine transactions found:
+------------------------------------------------------------
+BODY    : HDFC Bank: Rs 400.80 debited from a/c **2823 on 25-07-23 to VPA bookmyshow@axb(U
+BANK    : HDFC  |  TYPE: debit  |  AMOUNT: 400.8
+UPI REF : 320605383121  |  MERCHANT: bookmyshow@axb
+
+BODY    : Payment of Rs. 70050.00 at TCE BE INFORMATION TECHNOLOGY has failed.
+In case you
+BANK    : Paytm  |  TYPE: debit  |  AMOUNT: 70050.0
+UPI REF : nan  |  MERCHANT: nan
+
+BODY    : Amt Sent Rs.106.90
+From HDFC Bank A/C *2823
+To NSDL BILLDESK
+On 21-04
+Ref 411291
+BANK    : HDFC  |  TYPE: debit  |  AMOUNT: 106.9
+UPI REF : 411291768471  |  MERCHANT: nan
+
+BODY    : HDFC Bank: Rs. 106.90 credited to a/c XXXXXX2823 on 22-04-24 by a/c linked to VP
+BANK    : HDFC  |  TYPE: credit  |  AMOUNT: 106.9
+UPI REF : 411300762640  |  MERCHANT: nan
+
+BODY    : Amt Sent Rs.33.00
+From HDFC Bank A/C *2823
+To EASWARAKANTH  RAJAPANDIAN
+On 22-04
+BANK    : HDFC  |  TYPE: debit  |  AMOUNT: 33.0
+UPI REF : 411341354989  |  MERCHANT: nan

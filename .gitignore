@@ -1,0 +1,17 @@
+# Personal data — NEVER commit these
+*.xml
+spendsense.db
+dataset_extract/sms_raw_all.csv
+dataset_extract/sms_transactions_clean.csv
+dataset_extract/sms_labelled_clean.csv
+dataset_extract/sms_transactions_review.csv
+dataset_extract/*.csv
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
