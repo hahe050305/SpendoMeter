@@ -49,7 +49,7 @@ Structured Transaction Record
 ## 📦 Example Input
 
 ```text
-HDFC Bank: Rs 400.80 debited from a/c **2823 on 25-07-23 to VPA bookmyshow@axb UPI Ref No 320605383121
+HDFC Bank: Rs 450.80 debited from a/c **4545 on 25-07-23 to VPA bookmyshow@axb UPI Ref No 320998383121
 ```
 
 ---
@@ -63,7 +63,7 @@ HDFC Bank: Rs 400.80 debited from a/c **2823 on 25-07-23 to VPA bookmyshow@axb U
   "txn_type": "debit",
   "amount": 400.80,
   "bank": "HDFC",
-  "account_last4": "2823",
+  "account_last4": "4545",
   "upi_ref": "320605383121",
   "merchant": "BookMyShow",
   "category": "Entertainment"
